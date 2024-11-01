@@ -1,0 +1,142 @@
+/* Add Dashicon */
+#wpadminbar #wp-admin-bar-purge-varnish-cache .ab-icon {
+	float: left;
+	width: 26px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	background-size: 20px;
+}
+
+/* Add Style icon properly */
+span.dashicons.varnish-http-purge {
+	vertical-align: middle;
+}
+
+/* Allow display on small screen */
+@media screen and (max-width: 782px) {
+	#wpadminbar #wp-admin-bar-purge-varnish-cache .ab-icon,
+	#wpadminbar li#wp-admin-bar-purge-varnish-cache {
+		margin-left: 5px;
+		display: block!important;
+		background-size: 36px;
+		height: 46px;
+		width: 52px;
+	}
+}
+
+#w2p-page
+{
+	margin-right: 10px;
+}
+
+#w2p-page .processed
+{
+	border-top: 1px solid #ccc;
+}
+
+#w2p-page .processed li
+{
+	border-bottom: 1px solid #ccc;
+	padding:10px 0;
+}
+
+#w2p-page .processed li .filename
+{
+	font-family: monospace;
+	display: block;
+	word-wrap: break-word;
+}
+
+#w2p-page .processed li .accessed
+{
+	display: block;
+	margin-bottom: 10px;
+}
+
+#w2p-page .processed li .error
+{
+	color:red;
+}
+
+#w2p-page .processed li a
+{
+	margin-right: 10px;
+}
+
+#w2p-page .processed pre
+{
+	border:1px dotted #999;
+	padding:10px;
+	margin:10px 0;
+	background: #EEE;
+	max-height: 300px;
+	overflow: auto;
+	display: none;
+}
+
+/*#mmr_processed, #mmr_noprocessed //hoang
+{
+	display: none;
+}*/
+.mmr-hidden{display: none !important;}
+.w2ptab:not(.active){display: none;}
+.w2ptab label{
+	min-width: 130px;
+	display: inline-block;
+}
+#w2p-license-info{
+	margin-left: 10px;
+	color: red;
+}
+@media screen and (min-width:782px)
+{
+	#w2p-page .processed li .filename
+	{
+		min-width: 450px;
+		display: inline-block;
+	}
+	#w2p-page .processed li .accessed
+	{
+		min-width: 220px;
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	#w2p-page .processed li .actions
+	{
+		display: inline-block;
+		margin-top: 10px;
+	}
+	#w2p-page
+	{
+		margin-right: 20px;
+	}
+	#w2p-page .processed pre
+	{
+		margin-left:20px;
+	}
+}
+
+@media screen and (min-width: 910px)
+{
+	#w2p-page .processed li .actions
+	{
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 961px)
+{
+	#w2p-page .processed li .actions
+	{
+		margin-top: 10px;
+	}
+}
+
+@media screen and (min-width: 1034px)
+{
+	#w2p-page .processed li .actions
+	{
+		margin-top: 0;
+	}
+}
